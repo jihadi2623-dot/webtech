@@ -1,38 +1,94 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Student List DOM Practice</title>
-    <link rel="stylesheet" href="dom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Student List</h1>
+    <header>
 
-    <!-- Student Form -->
-    <form id="student-form">
+        <h1>Hasan Jihad</h1>
+        <p class="tagline">Web Developer | Student | Problem Solver</p>
 
-        <label>Student Name:</label>
-        <input type="text" id="student-name" placeholder="Enter student name">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <label>Student ID:</label>
-        <input type="text" id="student-id" placeholder="Enter student ID">
+        <button id="themeToggle">🌙 Dark Mode</button>
 
-        <label>Semester:</label>
-        <input type="text" id="student-semester" placeholder="Enter semester">
+    </header>
 
-        <label>Email:</label>
-        <input type="text" id="student-email" placeholder="Enter email">
+    <main>
 
-        <button type="submit">Add Student</button>
+        <!-- HOME SECTION -->
 
-    </form>
+        <section id="home">
 
-    <!-- Student List -->
-    <ul id="student-list"></ul>
+            <h2>Hello 👋</h2>
 
-    <script src="dom.js"></script>
+            <p>
+                I am a passionate developer who loves building websites and solving problems using technology.
+            </p>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+
+        <section id="projects">
+
+            <h2>My Projects</h2>
+
+            <div id="project-container"></div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name">
+                <span class="error" id="nameError"></span>
+
+                <input type="email" id="email" placeholder="Your Email">
+                <span class="error" id="emailError"></span>
+
+                <input type="text" id="subject" placeholder="Subject">
+                <span class="error" id="subjectError"></span>
+
+<textarea id="message" placeholder="Your Message"></textarea>
+                <span class="error" id="messageError"></span>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <button id="scrollTop">⬆</button>
+
+    <footer>
+
+        <p>© 2026 Hasan Jihad | Portfolio</p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: white;
+    transition: 0.3s;
+}
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* DARK MODE */
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+    .dark header {
+        background: black;
+    }
+
+    .dark .project-card {
+        background: #1e1e1e;
+        border: 1px solid #444;
+    }
+
+/* SCROLL BUTTON */
+
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    #project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
